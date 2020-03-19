@@ -7,12 +7,16 @@ O livro básico do curso será: Estatística: o que é, para que serve, como fun
 
 - Aula 1: Apresentação
 
-- Aula 2: Como montar um banco de dados
+- Aula 2: Como montar um banco de dados 
   CW: p.1-31
   
 - Aula 3: Estatística descritiva
-  CW: p. 32-55
+  CW: p.32-55
   
 - Aula 4: Estatística descritiva 2
+  CW: p.56-92
+  
+- Aula 5: Taxas e indicadores
+
  
 
