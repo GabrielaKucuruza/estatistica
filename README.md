@@ -1,5 +1,4 @@
-# estatistica
-
+# Programação das aulas
 	
 03/08: Apresentação do curso		
 
