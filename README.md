@@ -8,7 +8,7 @@
 
 12/08: R, Rstudio e RMarkdown	
 
-17/08:	Discussão de texto: Dimenses do Racismo	
+17/08:	Discussão de texto: Dimensões do Racismo	
 - Ferraz, Claudio. Racismo, participação política e a persistência das desigualdades brasileiras, Nexo Jornal, 2020
 	https://www.nexojornal.com.br/colunistas/2020/Racismo-participa%C3%A7%C3%A3o-pol%C3%ADtica-e-a-persist%C3%AAncia-das-desigualdades-brasileiras
 
