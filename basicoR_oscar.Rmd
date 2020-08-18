@@ -1,0 +1,195 @@
+---
+title: "Basico R"
+output:
+  pdf_document: default
+  html_document: default
+  word_document: default
+---
+
+## Diretório
+Uma das principais funções é a escolha do diretório. A forma básica é ir em Session -> set working directory -> choose directory
+
+Outra forma é usar o comando Ctrl + Shift + H
+
+Já pela linguagem R usamos o código setwd(""). Dessa forma você coloca o caminho do diretório entre aspas. Uma coisa importante é trocar a contra-barra(\) por barra(/).
+
+
+```{r}
+#setwd('C:\Users\Administrador\Downloads') # Como se pode ver, dessa forma dá erro
+
+
+#setwd('C:/Users/Administrador/Downloads')
+
+```
+Porém, esse comando é usado no R básico. No RMarkdown ele muda só o diretório daquele chunk.
+  
+Para mudar todos os chunk temos que usar o comando opts_knit$set(root.dir = ‘../’)
+
+
+```{r}
+#knitr::opts_knit$set(root.dir = "C:/Users/Administrador/Downloads")
+```
+
+Essa mudança só terá impactos nos próximos chunks.
+
+#### Importante
+
+A prioridade se dá na pasta em que se salva o arquivo RMarkdown
+
+
+## Instalar pacotes
+
+
+A instalação de pacote pode ser feita de 2 formas. A primeira é ir em Packages -> Install e daí escrever o nome do pacote que você quer. Essa forma é bastante útil se você não souber o nome do pacote certinho.
+
+Já a outra forma é por comando. Dentro dessa forma a outras 2 formas de instalar. A primeira é usando o próprio comando install.packages(“pacote”). Já a outra forma é usando uma fórmula sendo esta if (!require(tidyverse)) {install.packages(“tidyverse”); require(tidyverse)}
+
+
+
+
+```{r}
+#install.packages("tideverse") # Essa forma pode dar erro no RMarkdown
+
+if (!require(tidyverse)) {install.packages("tidyverse"); require(tidyverse)}
+```
+
+Após instalar o pacote você precisa “puxar” ele. Para isso o comando é library(pacote)
+
+
+```{r}
+library(tidyverse)
+```
+
+
+## Banco de dados
+
+### Extensões 
+
+A primeira coisa que se precisa olhar antes de puxar um banco de dados é ver a extensão dele. As extensões básicas mais utilizadas é o .csv. Mas tem como puxar outras extensões como o próprio xlsx (Excel), mas para isso é necessário instalar pacotes para isso; o do excel é o readxl. Mas outro pacote interessante é o foreing. Geralmente esses pacotes já estão instalado no R dai só será necessário usar o comando library() e rodar os pacotes.
+
+
+```{r}
+library(readxl)
+library(foreign)
+
+```
+
+Vale ressaltar que se a extensão que você quer usar não se encontra nesses pacotes é só recorrer ao google.
+
+
+### Banco de dados
+
+Bom, agora para trabalhar com banco de dados iremos puxar alguns bancos de dados. O R já possui alguns bancos nativos, como o próprio gapminder. Mas tem outros que precisam ser instalados como electionsBR. Porém, na maioria das vezes iremos trabalhar com bancos que não se encontram no R. Para isso, temos que usar comandos para ler esse bancos; geralmente é a função read. ou read_ (após o “.” ou o "_" é a extensão que será trabalhada)
+
+
+```{r}
+IDH = read.csv("EconomistData.csv")
+
+IDH2 <- read_csv("EconomistData.csv")
+#Como se pode perceber, não se tem diferença entre o uso do "='  e o uso do "<-". Vai de escolha de cada usuário
+
+```
+
+## Funções básica para analisar banco de dados
+
+A função str serve para analisar a estrutura do banco. Com esse comando é possível ver se quais colunas são categóricas e quais são numéricas
+
+```{r}
+str(IDH)
+```
+
+Já as funções head e tail são usadas para analisar o topo ou a base dos dados. Geralmente retorna as 6 primeiras variáveis; mas é possível retornar mais ou menos variáveis.
+
+
+```{r}
+head(IDH)
+head(IDH,10)
+
+tail(IDH)
+tail(IDH,10)
+```
+
+Já o comando para ver a tabela gerada, o data frame é o view()
+
+```{r}
+view(IDH)
+```
+
+## Limpeza básica
+
+Uma limpeza básica de banco de dados é a remoção dos valores NA. Para isso usamos o comando na.rm = TRUE ou na.omit(banco). Podemos inserir ele em diferentes etapas da analise. Sendo escolha da pessoa em qual parte inserir.
+
+
+```{r}
+IDH3 = na.omit(IDH)
+```
+
+```{r}
+tail(IDH3,10)
+```
+
+A diferença se encontra na utilização deles. O na.rm é mais pontual, para tirar os valores nulos em detemindas funções. Exemplo calcular a média.   
+
+```{r}
+mean(IDH$HDI) # sem uma limpeza apropriada o dado pode gerar valor NA
+
+mean(IDH$HDI, na.rm = TRUE)
+```
+
+Nesse exemplo eu usei o símbolo $ para selecionar a coluna em que iria trabalhar. Este símbolo é de extrema importância e você irá utilizá-lo diversas vezes.
+
+## Estatística básica
+
+
+### soma
+```{r}
+sum(IDH$HDI, na.rm = TRUE)
+
+```
+
+### Média
+```{r}
+mean(IDH$HDI, na.rm = TRUE)
+
+```
+
+### Mediana
+```{r}
+median(IDH$HDI, na.rm = TRUE)
+
+```
+
+### Moda
+
+O R não tem um comando para se calcular a moda. Para isso, temos que fazer uma função e assim criar o comando
+
+
+## Pipe e graficos com ggplot
+
+Pipe é um comando que serve para fazer sequência de comandos
+
+
+```{r}
+ggplot(IDH3, aes(Region,HDI.Rank)) + geom_bar(stat = "identity")
+```
+
+```{r}
+IDH3 %>%
+  ggplot(aes(Region,HDI.Rank)) + geom_bar(stat = "identity")
+```
+
+
+Tem como mudar algumas estruturas do gráfico como por exemplo a ordem das barras e trocar o local do eixo X pelo eixo Y
+
+```{r}
+IDH3 %>%
+  ggplot(aes(reorder(Region,+HDI.Rank),HDI.Rank)) + geom_bar(stat = "identity") + coord_flip()
+```
+
+
+
+
+
+
+
+
