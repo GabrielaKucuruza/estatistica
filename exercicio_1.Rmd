@@ -1,0 +1,113 @@
+---
+title: "Exercicio 1"
+output: html_document
+---
+
+Elections BR
+
+Pacote que trabalha com dados eleitorais brasileiros.
+O pacote faz o download, organiza e agrega os dados do Tribunal Superior Eleitoral. Facilita a vida do pesquisador.
+
+```{r}
+install.packages("electionsBR")
+library(electionsBR)
+library(tidyverse)
+```
+
+funções básicas para baixar cinco tipos de dados diferentes:
+https://cran.r-project.org/web/packages/electionsBR/electionsBR.pdf
+
+candidate_fed(): baixa dados sobre as candidaturas individuais nas eleições federais (dep estadual, governador, dep federal, senador e/ou presidente).
+candidate_local(): baixa dados sobre as candidaturas individuais nas eleições municipais (prefeito e/ou vereador).
+
+details_mun_zone_fed(): baixa dados sobre os detalhes de apuração desagregados por município/zona eleitoral das eleições federais.
+ details_mun_zone_local(): baixa dados sobre os detalhes de apuração desagregados por município/zona eleitoral das eleições municipais.
+
+legend_fed(): baixa dados sobre as legendas que concorreram nas eleições federais.
+legend_local(): baixa dados sobre as legendas que concorreram nas eleições locais.
+
+party_mun_zone_fed(): baixa dados sobre o desempenho das legendas desagregados por município/zona eleitoral nas eleições federais.
+
+party_mun_zone_local(): baixa dados sobre o desempenho das legendas desagregados por município/zona eleitoral nas eleições locais.
+
+vote_mun_zone_fed(): baixa dados sobre os resultados eleitorais desagregados por município/zona eleitoral nas eleições federais.
+vote_mun_zone_locais(): baixa dados sobre os resultados eleitorais desagregados por município/zona eleitoral nas eleições locais.
+
+  
+Exemplo: função candidate_fed(), que baixa os dados dos candidatos nas eleições federais no Brasil
+
+```{r}
+cand_fed2006 <- candidate_fed(2006)
+
+cand_fed218_rj <- candidate_fed(year = 2018, uf = "RJ")
+
+```
+
+Para os exercícios utilize o cargo de deputado federal
+
+1 - Selecione uma eleição/ unidade estadual 
+
+```{r}
+
+
+```
+
+
+2 - Analise a estrutura da tabela. Quantas variáveis tem? quantas colunas são numéricas e quantas são categóricas.
+
+
+```{r}
+
+```
+
+
+3 - Quantos candidatos  cada partido apresentou nessa eleição?
+
+```{r}
+
+```
+
+
+4 - Com base no exercicio anterior, filtre os dados, selecionando três partidos diferentes
+
+```{r}
+
+```
+
+
+5 - Selecione 5 colunas de seu interesse
+
+```{r}
+
+```
+
+
+6 - Coloque os dados selecionados no exercício 5  em ordem descrecente; uso uma ou mais variável quantitativa como referência 
+
+```{r}
+
+```
+
+
+7 - Mude o nome de uma ou mais variável  selecionada no exerceicio 5 
+
+```{r}
+
+```
+
+
+8. Crie um novo banco de dados com os 20 candidatos mais votados de um único partido e só com as colunas relevantes para análise
+
+```{r}
+
+```
+
+9. Selecione 5 partidos e tire a média de votos de cada um deles
+
+```{r}
+
+```
+
+
+
+

@@ -8,17 +8,21 @@
 
 12/08: R, Rstudio e RMarkdown	
 
-17/08:	Discussão de texto: Dimensões do Racismo	
-- Ferraz, Claudio. Racismo, participação política e a persistência das desigualdades brasileiras, Nexo Jornal, 2020
-	https://www.nexojornal.com.br/colunistas/2020/Racismo-participa%C3%A7%C3%A3o-pol%C3%ADtica-e-a-persist%C3%AAncia-das-desigualdades-brasileiras
+17/08: Casos e variáveis	
 
 19/08	Manipulação de dados com Dplyr	
 
 24/08	Manipulação de dados com Dplyr	
 
 26/08: Discussão de texto: Perfil dos escravos da Bahia
+
 - Krause , Thiago. 2014. “Compadrio e Escravidão na Bahia Seiscentista.” Afro-Ásia 21 (50): 199–228.
 	https://portalseer.ufba.br/index.php/afroasia/article/view/21351/13914
+	
+Discussão de texto: Dimensões do Racismo	
+
+- Ferraz, Claudio. Racismo, participação política e a persistência das desigualdades brasileiras, Nexo Jornal, 2020
+	https://www.nexojornal.com.br/colunistas/2020/Racismo-participa%C3%A7%C3%A3o-pol%C3%ADtica-e-a-persist%C3%AAncia-das-desigualdades-brasileiras
 
 31/08:	Introdução ao ggplot	
 
