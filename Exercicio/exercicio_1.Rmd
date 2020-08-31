@@ -39,13 +39,13 @@ Exemplo: função candidate_fed(), que baixa os dados dos candidatos nas eleiç�
 ```{r}
 cand_fed2006 <- candidate_fed(2006)
 
-cand_fed218_rj <- candidate_fed(year = 2018, uf = "RJ")
+cand_fed218_rj <- candidate_fed(year = 2006, uf = "RJ")
 
 ```
 
 Para os exercícios utilize o cargo de deputado federal
 
-1 - Selecione uma eleição/ unidade estadual 
+1 - Selecione uma eleição/unidade estadual 
 
 ```{r}
 
@@ -56,9 +56,11 @@ Para os exercícios utilize o cargo de deputado federal
 2 - Analise a estrutura da tabela. Quantas variáveis tem? quantas colunas são numéricas e quantas são categóricas.
 
 
+
 ```{r}
 
 ```
+
 
 
 3 - Quantos candidatos  cada partido apresentou nessa eleição?
@@ -82,14 +84,14 @@ Para os exercícios utilize o cargo de deputado federal
 ```
 
 
-6 - Coloque os dados selecionados no exercício 5  em ordem descrecente; uso uma ou mais variável quantitativa como referência 
+6 - Coloque os dados selecionados no exercício 5  em ordem descrecente; use uma ou mais variável quantitativa como referência 
 
 ```{r}
 
 ```
 
 
-7 - Mude o nome de uma ou mais variável  selecionada no exerceicio 5 
+7 - Mude o nome de uma ou mais variável  selecionada no exercicio 5 
 
 ```{r}
 
