@@ -39,7 +39,7 @@ Exemplo: função candidate_fed(), que baixa os dados dos candidatos nas eleiç�
 ```{r}
 cand_fed2006 <- candidate_fed(2006)
 
-cand_fed218_rj <- candidate_fed(year = 2006, uf = "RJ")
+cand_fed2006_rj <- candidate_fed(year = 2006, uf = "RJ")
 
 ```
 
@@ -49,6 +49,7 @@ Para os exercícios utilize o cargo de deputado federal
 
 ```{r}
 
+df <- candidate_fed(year = 2014, uf = "RJ")
 
 ```
 
@@ -58,7 +59,7 @@ Para os exercícios utilize o cargo de deputado federal
 
 
 ```{r}
-
+glimpse(df)
 ```
 
 
@@ -67,12 +68,26 @@ Para os exercícios utilize o cargo de deputado federal
 
 ```{r}
 
+## candidatos a deputado federal
+
+df %>% 
+  filter(DESCRICAO_CARGO =="DEPUTADO FEDERAL") %>% 
+  group_by(SIGLA_PARTIDO) %>%
+  summarize(n = n()) %>% 
+  arrange(desc(n))
 ```
 
 
 4 - Com base no exercicio anterior, filtre os dados, selecionando três partidos diferentes
 
 ```{r}
+
+df %>% 
+  filter(DESCRICAO_CARGO =="DEPUTADO FEDERAL") %>% 
+  group_by(SIGLA_PARTIDO) %>%
+  filter (SIGLA_PARTIDO %in% c("PT", "PSDB", "PSOL")) %>% 
+  summarize(n = n()) %>% 
+  arrange(desc(n))
 
 ```
 
@@ -81,12 +96,21 @@ Para os exercícios utilize o cargo de deputado federal
 
 ```{r}
 
+df %>% 
+  filter(DESCRICAO_CARGO =="DEPUTADO FEDERAL") %>% 
+  select(NOME_CANDIDATO,  IDADE_DATA_POSSE, DESC_SIT_TOT_TURNO ) %>% 
+  
+
 ```
 
 
 6 - Coloque os dados selecionados no exercício 5  em ordem descrecente; use uma ou mais variável quantitativa como referência 
 
 ```{r}
+df %>% 
+  filter(DESCRICAO_CARGO =="DEPUTADO FEDERAL") %>% 
+  select(NOME_CANDIDATO, IDADE_DATA_POSSE) %>% 
+arrange(desc(IDADE_DATA_POSSE)) 
 
 ```
 
@@ -95,18 +119,40 @@ Para os exercícios utilize o cargo de deputado federal
 
 ```{r}
 
-```
-
-
-8. Crie um novo banco de dados com os 20 candidatos mais votados de um único partido e só com as colunas relevantes para análise
-
-```{r}
+df %>% 
+ rename(cargo = DESCRICAO_CARGO)
+  
 
 ```
 
-9. Selecione 5 partidos e tire a média de votos de cada um deles
+
+8. Crie um novo banco de dados com os 20 candidatos mais idosos de um único partido e só com as colunas relevantes para análise 
+
 
 ```{r}
+
+df %>% 
+  filter(DESCRICAO_CARGO =="DEPUTADO FEDERAL") %>% 
+  select(NOME_CANDIDATO, IDADE_DATA_POSSE, SIGLA_PARTIDO) %>%
+  filter(SIGLA_PARTIDO == "PT") %>% 
+  arrange(desc(IDADE_DATA_POSSE)) %>% 
+  head(20)
+  
+#top_n(n = 20, wt = IDADE_DATA_POSSE) para group_by
+
+```
+
+9. Selecione 5 partidos e tire a média de idade de cada um deles
+
+```{r}
+
+df %>% 
+  filter(DESCRICAO_CARGO =="DEPUTADO FEDERAL") %>% 
+  filter (SIGLA_PARTIDO %in% c("PT", "PSDB", "PSOL", "DEM", "PSB")) %>% 
+  group_by(SIGLA_PARTIDO) %>%
+  summarize(media_idade = mean(IDADE_DATA_POSSE)) %>% 
+  arrange(desc(media_idade)) 
+  
 
 ```
 

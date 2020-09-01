@@ -24,13 +24,13 @@ Discussão de texto: Dimensões do Racismo
 - Ferraz, Claudio. Racismo, participação política e a persistência das desigualdades brasileiras, Nexo Jornal, 2020
 	https://www.nexojornal.com.br/colunistas/2020/Racismo-participa%C3%A7%C3%A3o-pol%C3%ADtica-e-a-persist%C3%AAncia-das-desigualdades-brasileiras
 
-31/08:	Introdução ao ggplot	
+31/08:	Medidas de tendência central e dispersão	
 
-02/09:	Introdução ao ggplot	
+02/09:	Medidas de tendência central e dispersão
 
 07/09:	FERIADO		
 
-09/09:	Gráficos para quantidades e proporções
+09/09:	Introdução ao ggplot
 
 14/09:	Gráficos para quantidades e proporções	
 
