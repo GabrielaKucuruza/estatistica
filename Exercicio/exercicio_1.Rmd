@@ -54,7 +54,7 @@ df <- candidate_fed(year = 2014, uf = "RJ")
 ```
 
 
-2 - Analise a estrutura da tabela. Quantas variáveis tem? quantas colunas são numéricas e quantas são categóricas.
+2 - Analise a estrutura do banco. Quantas variáveis tem? quantas colunas são numéricas e quantas são categóricas.
 
 
 
@@ -85,7 +85,7 @@ df %>%
 df %>% 
   filter(DESCRICAO_CARGO =="DEPUTADO FEDERAL") %>% 
   group_by(SIGLA_PARTIDO) %>%
-  filter (SIGLA_PARTIDO %in% c("PT", "PSDB", "PSOL")) %>% 
+  filter (SIGLA_PARTIDO %in% c("PT", "PSDB", "PDT")) %>% 
   summarize(n = n()) %>% 
   arrange(desc(n))
 
@@ -98,7 +98,7 @@ df %>%
 
 df %>% 
   filter(DESCRICAO_CARGO =="DEPUTADO FEDERAL") %>% 
-  select(NOME_CANDIDATO,  IDADE_DATA_POSSE, DESC_SIT_TOT_TURNO ) %>% 
+  select(NOME_CANDIDATO,  IDADE_DATA_POSSE, DESC_SIT_TOT_TURNO )  
   
 
 ```
@@ -134,7 +134,7 @@ df %>%
 df %>% 
   filter(DESCRICAO_CARGO =="DEPUTADO FEDERAL") %>% 
   select(NOME_CANDIDATO, IDADE_DATA_POSSE, SIGLA_PARTIDO) %>%
-  filter(SIGLA_PARTIDO == "PT") %>% 
+  filter(SIGLA_PARTIDO == "DEM") %>% 
   arrange(desc(IDADE_DATA_POSSE)) %>% 
   head(20)
   

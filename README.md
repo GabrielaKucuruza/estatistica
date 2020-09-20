@@ -32,9 +32,9 @@ Discussão de texto: Dimensões do Racismo
 
 09/09:	Introdução ao ggplot
 
-14/09:	Gráficos para quantidades e proporções	
+14/09:	Gráficos para uma variável categórica	
 
-16/09:	Gráficos para quantidades e proporções
+16/09:	Gráficos para uma variável quantitativa
 
 21/09:	A1		
 
