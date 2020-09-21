@@ -5,15 +5,13 @@ date: "9/20/2020"
 output: html_document
 ---
 
-
+Entrega no dia 27 de setembro às 20h; Subir no e-class.
 
 ### Carregar os pacotes
 
 ```{r}
-
 library(tidyverse)
 library(mosaicData)
-
 ```
 
 ### Carregar o banco de dados
@@ -26,14 +24,14 @@ View(CPS85)
 
 ### 1) Casos e variáveis
 
-Quantas variáveis e casos tem no banco? Quantas são variávies quantitativas, quantas são variávies categóricas
+Quantas variáveis e casos tem no banco? Quantas são variáveis quantitativas, quantas são variávies categóricas
 
 
 ```{r}
 
 ```
 
-- resposta:
+- resposta: 
 
 
 ### 2) Escolha uma variável categórica e filtre segundo um critério de sua escolha:
@@ -45,7 +43,7 @@ Quantas variáveis e casos tem no banco? Quantas são variávies quantitativas, 
 - Quantos casos permaneceram?
 
 
-### 3) Escolha uma variável categórica e filtre segundo um critério de sua escolha :
+### 3) Escolha uma variável quantitativa e filtre segundo um critério de sua escolha:
 
 ```{r}
 
@@ -58,7 +56,7 @@ Quantas variáveis e casos tem no banco? Quantas são variávies quantitativas, 
 
 ```
 
-### 5) Crie uma nova varivel a partir de duas outras quanti e selecione apenas essa variável
+### 5) Crie uma nova variável a partir de duas outras quantitativas e selecione apenas essa variável
 
 ```{r}
 
@@ -89,7 +87,7 @@ Quantas variáveis e casos tem no banco? Quantas são variávies quantitativas, 
 
 ```
 
-### 10) Refaça o greafico acima, mudando o número de "bins" do histograma.
+### 10) Refaça o gráfico acima, mudando o número de "bins" do histograma.
 
 ```{r}
 
