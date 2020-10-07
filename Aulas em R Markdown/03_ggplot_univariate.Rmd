@@ -17,13 +17,16 @@ knitr::opts_chunk$set(echo = TRUE)
 
 O banco de dados contém a informação de 98 pessoas do candado de Mobile, no Alabama:
 
-Um gráfico com a distribuição por raça
-
-
 ```{r}
 library(tidyverse)
 library(mosaicData)
 library(ggthemes)
+```
+
+
+Um gráfico com a distribuição por raça
+
+```{r}
 
 ggplot(Marriage, 
        aes(x= race)) +

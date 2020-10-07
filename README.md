@@ -1,93 +1,87 @@
-# Programação das aulas
-	
-03/08: Apresentação do curso		
+Programação das aulas
+=====================
 
-05/08: Como a análise de dados ajuda a entender a história: perfil dos escravos do Brasil e dos Estados Unidos	
+03/08: Apresentação do curso
 
-10/08: R, Rstudio e Rmarkdown	
+05/08: Como a análise de dados ajuda a entender a história: perfil dos escravos
+do Brasil e dos Estados Unidos
 
-12/08: R, Rstudio e RMarkdown	
+10/08: R, Rstudio e Rmarkdown
 
-17/08: Casos e variáveis	
+12/08: R, Rstudio e RMarkdown
 
-19/08	Manipulação de dados com Dplyr	
+17/08: Casos e variáveis
 
-24/08	Manipulação de dados com Dplyr	
+19/08 Manipulação de dados com Dplyr
+
+24/08 Manipulação de dados com Dplyr
 
 26/08: Discussão de texto: Perfil dos escravos da Bahia
 
-- Krause , Thiago. 2014. “Compadrio e Escravidão na Bahia Seiscentista.” Afro-Ásia 21 (50): 199–228.
-	https://portalseer.ufba.br/index.php/afroasia/article/view/21351/13914
-	
-Discussão de texto: Dimensões do Racismo	
+-   Krause , Thiago. 2014. “Compadrio e Escravidão na Bahia Seiscentista.”
+    Afro-Ásia 21 (50): 199–228.
+    https://portalseer.ufba.br/index.php/afroasia/article/view/21351/13914
 
-- Ferraz, Claudio. Racismo, participação política e a persistência das desigualdades brasileiras, Nexo Jornal, 2020
-	https://www.nexojornal.com.br/colunistas/2020/Racismo-participa%C3%A7%C3%A3o-pol%C3%ADtica-e-a-persist%C3%AAncia-das-desigualdades-brasileiras
+Discussão de texto: Dimensões do Racismo
 
-31/08:	Medidas de tendência central e dispersão	
+-   Ferraz, Claudio. Racismo, participação política e a persistência das
+    desigualdades brasileiras, Nexo Jornal, 2020
+    https://www.nexojornal.com.br/colunistas/2020/Racismo-participa%C3%A7%C3%A3o-pol%C3%ADtica-e-a-persist%C3%AAncia-das-desigualdades-brasileiras
 
-02/09:	Medidas de tendência central e dispersão
+31/08: Medidas de tendência central e dispersão
 
-07/09:	FERIADO		
+02/09: Medidas de tendência central e dispersão
 
-09/09:	Introdução ao ggplot
+07/09: FERIADO
 
-14/09:	Gráficos para uma variável categórica	
+09/09: Introdução ao ggplot
 
-16/09:	Gráficos para uma variável quantitativa
+14/09: Gráficos para uma variável categórica
 
-21/09:	A1		
+16/09: Gráficos para uma variável quantitativa
 
-23/09:	A1	
+21/09: A1
 
-28/09:	Discussão de Texto	
-- “Desigualdade social por cor  e renda no Brasil, IBGE" https://biblioteca.ibge.gov.br/visualizacao/livros/liv101681_informativo.pdf
+23/09: A1
 
-30/09:	Visualização de distribuição de dados	
+28/09: Semana especial
 
-05/10:	Visualização de distribuição de dados	
+30/09: Semana especial
 
-07/10:	Discussão de texto: Pretos, pardos e representação  política
-- Campos, Luiz Augusto, e Carlos Machado. 2017. “O Que Afasta Pretos e Pardos da Representação Política? Uma Análise a Partir Das Eleições Legislativas de 2014.” Revista de Sociologia e Politica 25 (61): 125–42. https://doi.org/10.1590/1678-987317256107
+05/10: Gráficos para duas variáveis
 
-12/10:	FERIADO	
+07/10: Gráficos para duas variáveis
 
-14/10:	Relação entre duas variáveis
+12/10: FERIADO
 
-19/10:	Relação entre duas variáveis	
+14/10: Relação entre mais de duas variáveis
 
-21/10:	Relação entre duas variáveis
+19/10: Relação entre mais de duas variáveis
 
-26/10:	Discussão de texto:O que os deputados dizem ?	
-- Moreira, Davi Cordeiro. 2016. “Com a Palavra Os Nobres Deputados: Frequência e Ênfase Temática Dos Discursos Dos Parlamentares Brasileiros.” Dados - Revista de Ciências Sociais 63 (1): 1–37. https://www.scielo.br/scielo.php?script=sci_arttext&pid=S0011-52582020000100202
+21/10: Relação entre duas variáveis: Correlação
 
-28/11:	Discussão de texto	Nicolau, Jairo. O financiamento de campanha e a eleição de deputados federais nas eleições de 2018
-	
-02/11: 	FERIADO	
+26/10: Análise de regressão
 
-04/11:	Gráficos para dados no tempo
+28/11: Análise de regressão
 
-09/11:	Gráficos para dados no tempo
+02/11: FERIADO
 
-11/11:	Gráficos para dados no tempo
+04/11: Gráficos para dados no tempo
 
-16/11:	Discussão de texto: Universdades peublicas e desigualdade	
-- Goés Carlos, Daniel Duque. 2016. “Como as universidades públicas no Brasil perpetuam a desigualdade de renda: fatos, dados e doluções.” Notas de Políticas Púbicas. Vol. 1.https://mercadopopular.org/nota-de-politicas-publicas/como-as-universidades-publicas-no-brasil-perpetuam-a-desigualdade-de-renda-fatos-dados- e-solucoes/
+09/11: Gráficos para dados no tempo
 
-18/11:	Análise de Regressão
+11/11: Como fazer uma apresentação com dados
 
-23/11:	Análise de regressão
+16/11: Gráfico para dados no espaço
 
-25/11:	Análise de regressão	
+18/11: Gráfico para dados no espaço
 
-30/11:	A2
+23/11: Apresentação de trabalhos
 
-01/12:	A2
+25/11: Apresentação  de trabalhos
 
-07/12:	A2		
- 
+30/11: Apresentação de trabalhos
 
+01/12: Apresentação de trabalhos
 
-
- 
-
+07/12: Aula final
