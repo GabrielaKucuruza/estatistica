@@ -1,0 +1,43 @@
+---
+title: "correlação"
+author: "Jairo Nicolau"
+date: "10/18/2020"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+library(mosaicData)
+```
+
+
+
+## Correlação
+
+
+```{r}
+data(SaratogaHouses, package="mosaicData")
+
+SaratogaHouses %>% 
+  select (price, age, lotSize, rooms, bathrooms) -> df
+
+r <- cor(df)
+round(r,2)
+
+```
+
+```{r}
+library(ggcorrplot)
+ggcorrplot(r)
+```
+
+
+```{r}
+ggcorrplot(r, 
+           hc.order = TRUE, 
+           type = "lower",
+           lab = TRUE)
+```
+
+
+

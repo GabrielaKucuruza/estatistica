@@ -66,22 +66,26 @@ Discussão de texto: Dimensões do Racismo
 
 02/11: FERIADO
 
-04/11: Gráficos para dados no tempo
+04/11: Como fazer uma apresentação com dados
 
-09/11: Gráficos para dados no tempo
+09/11: Como aperfeiçoar um gráfico
 
-11/11: Como fazer uma apresentação com dados
+11/11: Como aperfeiçoar um gráfico
 
-16/11: Gráfico para dados no espaço
+16/11: Apresentação de trabalhos: Sergio Kerzen, Marcelo Reis, Matheus Souza,
+Fernanda Amaral
 
-18/11: Gráfico para dados no espaço
+18/11: Apresentação de trabalhos: Arthur Aguiar, Matheus Correa, Gabriel Souza,
+Iasmin Souza, Raul Campos
 
-23/11: Apresentação de trabalhos
+23/11: Apresentação de trabalhos:  Tainá Maciel, Ian Araújo, Antonia Oliveira,
+Raquel Porto, Maria Julia Atty,
 
-25/11: Apresentação  de trabalhos
+25/11: Apresentação de trabalhos: Rafaella Gomes, Isabela Marins, Yago Falcão,
+Renê Ventura, Rodrigo Roll
 
-30/11: Apresentação de trabalhos
+30/11: A2
 
-01/12: Apresentação de trabalhos
+01/12: A2
 
-07/12: Aula final
+07/12: A2
