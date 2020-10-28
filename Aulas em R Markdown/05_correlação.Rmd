@@ -19,10 +19,12 @@ library(mosaicData)
 data(SaratogaHouses, package="mosaicData")
 
 SaratogaHouses %>% 
-  select (price, age, lotSize, rooms, bathrooms) -> df
+  select (price,age, lotSize, rooms, bathrooms) -> df
 
 r <- cor(df)
+
 round(r,2)
+
 
 ```
 
@@ -39,5 +41,43 @@ ggcorrplot(r,
            lab = TRUE)
 ```
 
+```{r}
+ggplot(SaratogaHouses, 
+       aes(x = lotSize, 
+           y = price)) +
+  geom_point() + 
+  geom_smooth(method = "lm")
+```
+
+
+```{r}
+library (carData)
+ggplot(Salaries,
+       aes(x = yrs.since.phd, 
+           y = salary)) +
+  geom_point(color= "steelblue") +
+  geom_smooth(method = "lm")
+```
+
+## Análise de regressão 
+
+```{r}
+library(jtools)
+
+data(SaratogaHouses, package="mosaicData")
+
+casas <- lm(price ~ bathrooms, 
+                data = SaratogaHouses)
+
+summ(casas)
+```
+
+usar a regressnao linear para predizer casos
+
+y = constante (intercepto) + bathrooms () 
+
+y = 42271 + 89304 (4) 
+
+y= 42271 + 357216 = 399.487
 
 
