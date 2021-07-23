@@ -1,91 +1,67 @@
 Programação das aulas
 =====================
 
-03/08: Apresentação do curso
+1 - Apresentação do curso
 
-05/08: Como a análise de dados ajuda a entender a história: perfil dos escravos
-do Brasil e dos Estados Unidos
+2 - Instalação do R/Rstudio 
 
-10/08: R, Rstudio e Rmarkdown
+3 - Introdução ao R
 
-12/08: R, Rstudio e RMarkdown
+4 - Rmarkdown/ Fluxo de trabalho
 
-17/08: Casos e variáveis
+5 - Manipulação de dados com Dplyr
 
-19/08 Manipulação de dados com Dplyr
+6 -  Manipulação de dados com Dplyr
 
-24/08 Manipulação de dados com Dplyr
+7 - Importando e exportando banco de dados
 
-26/08: Discussão de texto: Perfil dos escravos da Bahia
+8 -  Dados categóricos com forcats
 
--   Krause , Thiago. 2014. “Compadrio e Escravidão na Bahia Seiscentista.”
-    Afro-Ásia 21 (50): 199–228.
-    https://portalseer.ufba.br/index.php/afroasia/article/view/21351/13914
+9 -  Estatistica descritiva 1
 
-Discussão de texto: Dimensões do Racismo
+10 - Estatística descritiva 2
 
--   Ferraz, Claudio. Racismo, participação política e a persistência das
-    desigualdades brasileiras, Nexo Jornal, 2020
-    https://www.nexojornal.com.br/colunistas/2020/Racismo-participa%C3%A7%C3%A3o-pol%C3%ADtica-e-a-persist%C3%AAncia-das-desigualdades-brasileiras
+9 -  Introdução ao ggplot 
 
-31/08: Medidas de tendência central e dispersão
+10 - Visualização  de dados com uma variável categórica
 
-02/09: Medidas de tendência central e dispersão
+11 - Visualização de dados com uma variável quantitativa
 
-07/09: FERIADO
+12-  Visualização  de dados com o duas ou mais varíveis 1
 
-09/09: Introdução ao ggplot
+13 - Visualização de dados com duas ou mais variávies 2
 
-14/09: Gráficos para uma variável categórica
+14 - Construindo Mapas 1
 
-16/09: Gráficos para uma variável quantitativa
+15 - Construindo Mapas 2
 
-21/09: A1
+16 - Correlação 1
 
-23/09: A1
+17 - Correlação 2
 
-28/09: Semana especial
+18 -
 
-30/09: Semana especial
+19 -
 
-05/10: Gráficos para duas variáveis
+20 -
 
-07/10: Gráficos para duas variáveis
+21 -
 
-12/10: FERIADO
+22 -
 
-14/10: Relação entre mais de duas variáveis
+23 - 
 
-19/10: Relação entre mais de duas variáveis
+24 -
 
-21/10: Relação entre duas variáveis: Correlação
+25 -
 
-26/10: Análise de regressão
+26: Como fazer uma apresentação com dados
 
-28/11: Análise de regressão
+27: Apresentação de trabalhos: 
 
-02/11: FERIADO
+28: Apresentação de trabalhos:  
 
-04/11: Como fazer uma apresentação com dados
+29: Apresentação de trabalhos: 
 
-09/11: Como aperfeiçoar um gráfico
+30:  Apresentação de trabalhos:
 
-11/11: Como aperfeiçoar um gráfico
-
-16/11: Apresentação de trabalhos: Sergio Kerzen, Marcelo Reis, Matheus Souza,
-Fernanda Amaral
-
-18/11: Apresentação de trabalhos: Arthur Aguiar, Matheus Correa, Gabriel Souza,
-Iasmin Souza, Raul Campos
-
-23/11: Apresentação de trabalhos:  Tainá Maciel, Ian Araújo, Antonia Oliveira,
-Raquel Porto, Maria Julia Atty,
-
-25/11: Apresentação de trabalhos: Rafaella Gomes, Isabela Marins, Yago Falcão,
-Renê Ventura, Rodrigo Roll
-
-30/11: A2
-
-01/12: A2
-
-07/12: A2
