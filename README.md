@@ -1,67 +1,67 @@
 Programação das aulas
 =====================
 
-1 - Apresentação do curso
+27/07 - Apresentação do curso
 
-2 - Instalação do R/Rstudio 
+29/07 - Instalação do R/Rstudio 
 
-3 - Introdução ao R
+03/08 - Introdução ao R
 
-4 - Rmarkdown/ Fluxo de trabalho
+05/08 - Rmarkdown/ Fluxo de trabalho
 
-5 - Manipulação de dados com Dplyr
+10/08 - Manipulação de dados com Dplyr
 
-6 -  Manipulação de dados com Dplyr
+12/08 - Manipulação de dados com Dplyr
 
-7 - Importando e exportando banco de dados
+17/08 - Importando e exportando banco de dados
 
-8 -  Dados categóricos com forcats
+19/08 - Dados categóricos com forcats
 
-9 -  Estatistica descritiva 1
+24/08 - Estatistica descritiva 1
 
-10 - Estatística descritiva 2
+26/08 - Estatística descritiva 2
 
-9 -  Introdução ao ggplot 
+31/08-  Introdução ao ggplot 
 
-10 - Visualização  de dados com uma variável categórica
+02/09 - Visualização  de dados com uma variável categórica
 
-11 - Visualização de dados com uma variável quantitativa
+05/09 - Visualização de dados com uma variável quantitativa
 
-12-  Visualização  de dados com o duas ou mais varíveis 1
+07/09 - Visualização  de dados com o duas ou mais varíveis 1
 
-13 - Visualização de dados com duas ou mais variávies 2
+09/09 - Visualização de dados com duas ou mais variávies 2
 
-14 - Construindo Mapas 1
+14/09 - Construindo Mapas 1
 
-15 - Construindo Mapas 2
+16/09 - Construindo Mapas 2
 
-16 - Correlação 1
+28/09 - Correlação 1
 
-17 - Correlação 2
+30/09 - Correlação 2
 
-18 -
+05/10 - Amostragem e margem de erro 1
 
-19 -
+07/10 - Amostragem e margem de erro 2
 
-20 -
+19/10 - estudos de caso 1:analisando dados da PNAD
 
-21 -
+21/10 - estudo de caso 1: analisando dados da PNAD
 
-22 -
+26/10 - estudos de caso 2: Analisando um banco de dados sobre escravos no século XVII
 
-23 - 
+28/10 - estudos de caso 2: Analisando um banco de dados sobre escravos no século XVII
 
-24 -
+04/11 - estudos de caso 3: Analisando um banco de dados sobre opinião pública
 
-25 -
+09/11 - estudos de caso 3: Analisando um banco de dados sobre opinião pública
 
-26: Como fazer uma apresentação com dados
+11/11 - Como fazer uma apresentação com dados
 
-27: Apresentação de trabalhos: 
+16/11 - Apresentação de trabalhos: 
 
-28: Apresentação de trabalhos:  
+18/11 - Apresentação de trabalhos:  
 
-29: Apresentação de trabalhos: 
+23/11 - Apresentação de trabalhos: 
 
-30:  Apresentação de trabalhos:
+25/11 - Apresentação de trabalhos:
 
