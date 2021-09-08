@@ -27,13 +27,11 @@ Programação das aulas
 
 05/09 - Visualização de dados com uma variável quantitativa
 
-07/09 - Visualização  de dados com o duas ou mais varíveis 1
+09/09 - Visualização de dados com duas ou mais variávies 1
 
-09/09 - Visualização de dados com duas ou mais variávies 2
+14/09 - Visualização  de dados com o duas ou mais varíveis 2
 
-14/09 - Construindo Mapas 1
-
-16/09 - Construindo Mapas 2
+16/09 -  Análise de dados categóricos 
 
 28/09 - Correlação 1
 
