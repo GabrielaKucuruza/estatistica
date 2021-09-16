@@ -1,0 +1,100 @@
+---
+title: "Exercicio: A1"
+author: "Jairo Nicolau"
+date: "15/09/2020"
+output: html_document
+---
+
+Entrega no dia 26 de setembro às 20h; Subir no e-class.
+Escreva pequenos textos abaixo de cada gráfico. 
+Atenção: salvar o trabalho preferencialmente em  word, se não conseguir, em html.
+
+Dica: para usar a escala logarítimica  no gráfico: 
+= scale_y_log10(breaks = breaks, labels = comma(breaks, accuracy =  1)) 
+ 
+
+### Carregar os pacotes
+
+```{r}
+
+```
+
+### Ler o banco de dados
+
+```{r}
+
+```
+
+
+### 1) Casos e variáveis
+
+Quantas variáveis e casos existem no banco? Quantas variáveis  são quantitativas e quantas são  categóricas?
+
+
+```{r}
+
+```
+
+
+
+### 2) Escolha uma variável categórica, agrupe e calcule a média e mediana ( votos ou gastos). Existe alguma diferença relevante entre as duas?
+
+```{r}
+
+```
+
+
+
+### 3) Como você faria um gráfico para apresentar os dados da questão 2? Por que você você optou por fazer esse gráfico?
+
+```{r}
+
+```
+
+
+### 4) Recodifique a variável da questão 2 de modo que ela fique com menos categorias (labels). Refaça o gráfico da questão gráfico com essa nova variável categórica.  
+
+```{r}
+
+```
+
+### 5) Faça um gráfico que mostre a relação entre os gastos e a eleição de mulheres e de homens.
+
+```{r}
+
+```
+
+### 6) Faça um scaterplot que associe o total de votos e gastos. Existe algo que te chame a atenção?
+
+```{r}
+
+```
+
+
+### 7) Selecione dois estados, faça um novo gráfico com os dados que você escolheu na questão 6. Tem algo que te chama a atenção?
+
+```{r}
+
+```
+
+### 8) Escolha uma variável quantitativa e uma variável categórica. Faça um boxplot. Algo chama a atenção?
+
+```{r}
+
+```
+
+### 9) Escolha uma variável quantitativa. Faça um histograma. Existe algo que chama a sua atenção na distribuição?
+
+```{r}
+
+```
+
+### 10) Use a mesma variável acima, calcule a média segundo a cor do candidato. Faça um gráfico com os resultados. Algo chamou a sua atenção?
+
+```{r}
+
+```
+
+
+
+
