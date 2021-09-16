@@ -5,6 +5,8 @@ date: "15/09/2020"
 output: html_document
 ---
 
+Use o banco de dados receita_voto_2018.csv
+
 Entrega no dia 26 de setembro às 20h; Subir no e-class.
 Escreva pequenos textos abaixo de cada gráfico. 
 Atenção: salvar o trabalho preferencialmente em  word, se não conseguir, em html.
