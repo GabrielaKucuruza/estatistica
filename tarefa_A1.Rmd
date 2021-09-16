@@ -8,11 +8,15 @@ output: html_document
 Use o banco de dados receita_voto_2018.csv
 
 Entrega no dia 26 de setembro às 20h; Subir no e-class.
+
 Escreva pequenos textos abaixo de cada gráfico. 
+
 Atenção: salvar o trabalho preferencialmente em  word, se não conseguir, em html.
 
 Dica: para usar a escala logarítimica  no gráfico: 
-= scale_y_log10(breaks = breaks, labels = comma(breaks, accuracy =  1)) 
+= scale_y_log10(breaks = breaks, labels = comma(breaks, accuracy =  1))
+
+Atençao: Faça todo o exercício filtrando apenas para o cargo de deputado federal (variável =Cargo)  e para os candidatos que não foram impugnados  Justiça Eleitoral (variável  = situacao_candidatura)
  
 
 ### Carregar os pacotes
