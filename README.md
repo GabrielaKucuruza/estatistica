@@ -31,7 +31,7 @@ Programação das aulas
 
 14/09 - Visualização  de dados com o duas ou mais varíveis 2
 
-16/09 -  Análise de dados categóricos 
+16/09 - Análise de dados categóricos 
 
 28/09 - Desvio padrão
 
@@ -41,7 +41,7 @@ Programação das aulas
 
 07/10 - Z-score e curva normal
 
-14/10 - valiação da prova
+14/10 - Avaliação da prova
 
 19/10 - Correlação/ regressão
 
