@@ -33,25 +33,27 @@ Programação das aulas
 
 16/09 -  Análise de dados categóricos 
 
-28/09 - Correlação 1
+28/09 - Desvio padrão
 
-30/09 - Correlação 2
+30/09 - Dessvio padrão
 
-05/10 - Amostragem e margem de erro 1
+05/10 - Z-score e curva normal
 
-07/10 - Amostragem e margem de erro 2
+07/10 - Z-score e curva normal
 
-19/10 - estudos de caso 1:analisando dados da PNAD
+14/10 - valiação da prova
 
-21/10 - estudo de caso 1: analisando dados da PNAD
+19/10 - Correlação/ regressão
 
-26/10 - estudos de caso 2: Analisando um banco de dados sobre escravos no século XVII
+21/10 - Correlação/ regressão
 
-28/10 - estudos de caso 2: Analisando um banco de dados sobre escravos no século XVII
+26/10 - estudos de caso: Analisando os dados da PNAD
 
-04/11 - estudos de caso 3: Analisando um banco de dados sobre opinião pública
+28/10 - estudos de caso: Analisando os dados da PNAD
 
-09/11 - estudos de caso 3: Analisando um banco de dados sobre opinião pública
+04/11 - Fundamento da amostra
+
+09/11 - Fundamento da amostra
 
 11/11 - Como fazer uma apresentação com dados
 
