@@ -1,0 +1,72 @@
+---
+title: "regressão"
+author: "Jairo Nicolau"
+date: "20/10/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library (tidyverse)
+library(here)
+library(readxl)
+```
+
+```{r}
+df_2008 <- read_xlsx(here( "bairro_rio_2008.xlsx"))
+```
+
+
+```{r}
+ggplot(df_2008,
+       aes(x = RDom_Media , 
+           y = T2Edua_pcV)) +
+  geom_point(color= "steelblue") +
+  geom_smooth(method = "lm")
+```
+
+```{r}
+ggplot(df_2008,
+       aes(x = RDom_Media , 
+           y = T2Gabe_pcV)) +
+  geom_point(color= "steelblue") +
+  geom_smooth(method = "lm")
+```
+
+
+
+
+
+
+
+```{r}
+library(jtools)
+
+# RDom_Media
+renda <- lm (T2Gabe_pcV  ~ RDom_Media , data = df_2008)
+
+summ(renda)
+```
+
+usar a regressnao linear para predizer casos
+
+y = constante (intercepto) + renda (?) 
+
+y = 61.66 - 0.02 (3000) #  713 é a renda media 
+
+Qual vai ser o percentual esperado de votos para Eduardo Paes em um bairro cuja renda é 713?
+
+61,66 - 14,26 é o percentual estimado de votos que Eduardo teria em um bairro que representa a renda media de todos os bairros
+
+47,4%
+
+
+
+
+
+
+
+
