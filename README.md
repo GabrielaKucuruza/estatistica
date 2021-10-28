@@ -61,7 +61,7 @@ Programação das aulas
 
 18/11 - Apresentação de trabalhos:  Giovanni, Diana, Gabrirela, Giselly, João Victor
 
-23/11 - Apresentação de trabalhos: Karime, Leonardo, Luiza, Livia, Lorena
+23/11 - Apresentação de trabalhos: Karime, Leonardo, Luiza, Livia, Lorena, Pedro
 
-25/11 - Apresentação de trabalhos:Luiz Felipe,  Wania, Pedro, Raul, Rodrigo, Suzane, Vinicius
+25/11 - Apresentação de trabalhos: Luiz Felipe,  Wania,  Raul, Rodrigo, Suzane, Vinicius
 
