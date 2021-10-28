@@ -57,11 +57,11 @@ Programação das aulas
 
 11/11 - Como fazer uma apresentação com dados
 
-16/11 - Apresentação de trabalhos: 
+16/11 - Apresentação de trabalhos: Ana Giulia, Ana Julia, Ana Beatriz, Ana Valle, Bruna
 
-18/11 - Apresentação de trabalhos:  
+18/11 - Apresentação de trabalhos:  Giovanni, Diana, Gabrirela, Giselly, João Victor
 
-23/11 - Apresentação de trabalhos: 
+23/11 - Apresentação de trabalhos: Karime, Leonardo, Luiza, Livia, Lorena
 
-25/11 - Apresentação de trabalhos:
+25/11 - Apresentação de trabalhos:Luiz Felipe,  Wania, Pedro, Raul, Rodrigo, Suzane, Vinicius
 
