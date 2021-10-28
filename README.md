@@ -63,5 +63,5 @@ Programação das aulas
 
 23/11 - Apresentação de trabalhos: Karime, Leonardo, Luiza, Livia, Lorena, Pedro
 
-25/11 - Apresentação de trabalhos: Luiz Felipe,  Wania,  Raul, Rodrigo, Suzane, Vinicius
+25/11 - Apresentação de trabalhos: Luiz Felipe,  Vânia,  Raul, Rodrigo, Suzane, Vinicius
 
