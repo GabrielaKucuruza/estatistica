@@ -1,0 +1,202 @@
+---
+title: "Aula PNAD"
+author: "jairo Nicolau"
+date: "6/9/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(PNADcIBGE)
+library(sjPlot)
+library(here)
+
+```
+
+```{r}
+pnad <- get_pnadc(year = 2021, quarter = 1,  design = FALSE)
+```
+
+```{r}
+pnad %>% sjPlot::view_df()
+```
+
+###  sexo
+
+```{r}
+pnad%>% 
+  rename (sexo = V2007) -> pnad
+  
+```
+
+```{r}
+pnad %>% 
+  mutate(
+    sexo = 
+      case_when(
+        sexo == 'Homem' ~ 'masculino',
+        sexo == 'Mulher' ~ 'feminino'
+        )) -> pnad
+```
+
+
+
+```{r}
+pnad %>% 
+ count(sexo) %>% 
+  mutate(prop = n/(sum(n))*100)
+```
+
+
+### Ensino
+
+```{r}
+pnad %>% 
+ count(VD3004) %>% 
+  mutate(prop = n/(sum(n))*100)
+```
+
+```{r}
+pnad %>% 
+ filter(!is.na(VD3004)) %>% 
+  mutate(
+    ensino = 
+      case_when(
+        VD3004 == 'Sem instrução e menos de 1 ano de estudo' ~ 'fundamental incompleto',
+        VD3004 == 'Fundamental incompleto ou equivalente' ~ 'fundamental incompleto',
+        VD3004 == 'Fundamental completo ou equivalente' ~ 'fundamental completo',
+        VD3004 == 'lê e escreve' ~ 'fundamental incompleto',
+        VD3004 == 'Médio incompleto ou equivalente' ~ 'fundamental completo',
+        VD3004 == 'Médio completo ou equivalente' ~ 'médio completo',
+        VD3004 == 'Superior incompleto ou equivalente' ~ 'médio completo',
+        VD3004 == 'Superior completo' ~ 'superior completo')) -> pnad
+        
+```
+
+
+
+```{r}
+pnad %>% 
+#filter(!is.na(ensino)) %>% 
+ count(ensino) %>% 
+  mutate(prop = n/(sum(n))*100)
+```
+
+
+### Cor 
+
+```{r}
+pnad %>% 
+ count( V2010) %>% 
+  mutate(prop = n/(sum(n))*100)
+```
+
+
+```{r}
+pnad%>% 
+  rename (cor= V2010) -> pnad
+  
+```
+
+
+### Estado
+
+```{r}
+pnad %>% 
+ rename (estado =  UF) -> pnad
+```
+
+
+### Idade
+
+```{r}
+pnad %>%
+  filter(V2009 >15) %>% 
+  
+ count(V2009) %>% 
+  mutate(prop = n/(sum(n))*100) 
+  
+```
+
+
+
+```{r}
+pnad %>% 
+  filter(V2009 >15) %>%
+ mutate(
+    idade = case_when( 
+      V2009  <= 29 ~ '16-29',
+      V2009  <= 44 ~ '30-44',
+      V2009 <= 59 ~ '45-59',
+      V2009  >= 60 ~ '60_ou_mais'
+      )) -> pnad
+```
+
+```{r}
+pnad %>% 
+count (idade) %>% 
+  mutate(prop = n/(sum(n))*100)
+```
+
+
+
+### Renda
+
+
+```{r}
+pnad %>% 
+ rename (renda =  VD4020) -> pnad
+```
+
+### Agregando e atributos por renda
+
+```{r}
+pnad %>% 
+  group_by(ensino, sexo, cor) %>%
+  summarize(media_renda = mean (renda,na.rm=TRUE),
+            mediana_renda = median(renda, na.rm=TRUE),
+            desvio_renda= sd(renda, na.rm=TRUE)) 
+```
+
+```{r}
+pnad %>% 
+  group_by( cor, sexo) %>%
+  filter (cor %in% c("Branca", "Preta", "Parda")) %>% 
+  summarize(media_renda = mean (renda,na.rm=TRUE),
+            mediana_renda = mean(renda, na.rm=TRUE),
+            desvio_renda= sd(renda, na.rm=TRUE)) 
+```
+
+```{r}
+pnad %>% 
+  group_by(VD3004) %>%
+  filter (cor %in% c("Branca", "Preta", "Parda")) %>% 
+  summarize(media_renda = mean (renda,na.rm=TRUE),
+            mediana_renda = mean(renda, na.rm=TRUE),
+            desvio_renda= sd(renda, na.rm=TRUE)) 
+```
+```{r}
+pnad %>% 
+  select (sexo, idade, ensino, cor, renda, estado) -> pnad2
+```
+
+
+
+```{r}
+write_csv(pnad2, here("pnad.csv"))
+```
+
+
+
+
+`
+
+
+
+
+
+
