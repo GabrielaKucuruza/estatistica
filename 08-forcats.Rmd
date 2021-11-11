@@ -1,0 +1,159 @@
+# Limpando dados para análise
+
+
+## Dados categóricos com Forcats
+
+```{r message=FALSE, warning=FALSE}
+library(tidyverse)
+forcats::gss_cat
+```
+
+
+Como conhecer os levels de uma variávele categórica?
+
+```{r}
+
+levels(gss_cat$race)
+
+# para saber o número de levels
+#nlevels(gss_cat$race)
+
+# para saber a classe da variavel
+#class(gss_cat$race)
+
+```
+
+Uma tabela de frequência
+
+```{r}
+gss_cat %>% 
+  count(race)
+```
+
+Um gráfico simples para ver os labels
+
+```{r}
+ggplot(gss_cat, aes(race)) +
+  geom_bar()
+```
+
+Por default os labels sem valores não são mostrados, mas podem ser forçados
+
+```{r}
+ggplot(gss_cat, aes(race)) +
+  geom_bar() +
+  scale_x_discrete(drop = FALSE)
+```
+
+Mundando a ordem dos levels por frequencia de outra variavel
+
+```{r message=TRUE, warning=TRUE}
+
+# reservar para os fatores que ñao são naturalmente ordenados
+
+relig_summary <- gss_cat %>%
+  group_by(relig) %>%
+  summarise(
+    age = mean(age, na.rm = TRUE),
+    tvhours = mean(tvhours, na.rm = TRUE),
+    n = n()
+  )
+
+ggplot(relig_summary, aes(tvhours, fct_reorder(relig, tvhours))) +
+  geom_point()
+```
+
+Aqui não faz sentido ordenar, só colocar o "not aplicable" para o fim
+
+```{r}
+
+rincome_summary <- gss_cat %>%
+  group_by(rincome) %>%
+  summarise(
+    age = mean(age, na.rm = TRUE),
+    tvhours = mean(tvhours, na.rm = TRUE),
+    n = n())
+
+ggplot(rincome_summary, aes(age, fct_relevel(rincome, "Not applicable"))) +
+  geom_point()
+
+```
+
+Ordenando as legenda na ordem do gráfico
+
+```{r}
+
+by_age <- gss_cat %>%
+  filter(!is.na(age)) %>%
+  count(age, marital) %>%
+  group_by(age) %>%
+  mutate(prop = n / sum(n))
+
+# na figura a legenda está alinhada com as cores 
+ggplot(by_age, aes(age, prop, colour = marital)) +
+  geom_line(na.rm = TRUE)
+
+# agora está
+ggplot(by_age, aes(age, prop, colour = fct_reorder2(marital, age, prop))) +
+  geom_line() +
+  labs(colour = "marital")
+```
+
+Para graficos de barra, o fct_infreq() ordena do menor para o maior, para o contrário, colocar o fct_rev(), que reverte a ordem
+
+```{r}
+gss_cat %>%
+  mutate(marital = marital %>% fct_infreq() %>% fct_rev()) %>%
+  ggplot(aes(marital)) +
+    geom_bar()
+```
+
+Mudando o valor dos labels
+
+```{r}
+gss_cat %>% count(partyid)
+```
+
+RECODE: mudando o valor de cada label: novo label na frente; os levels não mencionados ficarão do mesmo jeito
+
+```{r}
+gss_cat %>%
+  mutate(partyid = fct_recode(partyid,
+    "Republican, strong"    = "Strong republican",
+    "Republican, weak"      = "Not str republican",
+    "Independent, near rep" = "Ind,near rep",
+    "Independent, near dem" = "Ind,near dem",
+    "Democrat, weak"        = "Not str democrat",
+    "Democrat, strong"      = "Strong democrat"
+  )) %>%
+  count(partyid)
+```
+
+RECODE: diversos labels de maneira agregada
+
+```{r}
+gss_cat %>%
+  mutate(partyid = fct_collapse(partyid,
+    other = c("No answer", "Don't know", "Other party"),
+    rep = c("Strong republican", "Not str republican"),
+    ind = c("Ind,near rep", "Independent", "Ind,near dem"),
+    dem = c("Not str democrat", "Strong democrat")
+  )) %>%
+  count(partyid)
+
+
+```
+
+Agregando com os labels mais frequentes (no caso 10) e uma outra categoria para "outros"
+
+```{r}
+
+ #  dez labels , excluisve o outros
+gss_cat %>%
+  mutate(relig = fct_lump(relig, n = 10)) %>%
+  count(relig, sort = TRUE) %>%
+  print(n = Inf)
+```
+
+
+## Dados quantitativos
