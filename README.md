@@ -51,7 +51,7 @@ Programação das aulas
 
 28/10 - estudos de caso: Analisando os dados da PNAD
 
-04/11 - Fundamento da amostra
+04/11 - Anealide dados 
 
 09/11 - Fundamento da amostra
 
@@ -59,9 +59,9 @@ Programação das aulas
 
 16/11 - Apresentação de trabalhos: Ana Giulia, Ana Julia, Ana Beatriz, Bruna
 
-18/11 - Apresentação de trabalhos:  Giovanni, Diana, Gabriela, Giselly, João Victor
+18/11 - Apresentação de trabalhos:  Giovanni,  Giselly, João Victor, Pedro, Rodrigo
 
-23/11 - Apresentação de trabalhos: Karime, Ana Valle, Leonardo, Luiza, Livia, Lorena, Pedro
+23/11 - Apresentação de trabalhos: Karime, Ana Valle, Leonardo, Luiza, Livia, Lorena, Diana, Gabriela,
 
-25/11 - Apresentação de trabalhos: Luiz Felipe, Vânia, Raul, Rodrigo, Suzane, Vinicius
+25/11 - Apresentação de trabalhos: Luiz Felipe, Vânia, Raul, Suzane, Vinicius
 
